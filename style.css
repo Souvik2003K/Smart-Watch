@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header{
+    background-color: #2e2e59;
+    text-align: center;
+    padding: 15px;
+}
+
+.head-logo{
+    width: 100px;
+}
+
+/* ============================================= */
+
+
+
+main{
+    display: flex;
+}
+
+main #sec1 , main #sec2{
+    width: 50%;
+    margin: 30px;
+}
+
+#watch-face{
+    margin: 100px 250px;
+    height: 400px;
+}
+
+#burgundy , #burlywood, #purple , #orange{
+    border: none;
+    width: 50px;
+    height: 30px;
+}
+
+#burgundy{
+    background-color: #c43a5c;
+}
+
+#orange{
+    background-color: orange;
+}
+#burlywood{
+    background-color: burlywood;
+}
+#purple{
+    background-color: violet;
+}
+
+.heading , .desc , .colors , .all-c , .all-f{
+    margin: 30px;
+}
+
+.colors{
+    font-weight: 700;
+}
+
+.col , .fea{
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.fea{
+    padding: 10px;
+    border: none;
+    background-color: lightgrey;
+    font-size: 14px;
+}
+
+#buy{
+    background-color: orange;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 150px;
+    margin: 30px 50px;
+}
+
+#buy:hover{
+    box-shadow: 0px 0px 10px orange;
+}
+
+button{
+    cursor: pointer;
+}
+
+#span{
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    color: white;
+}
+
+.hImg{
+    height: 120px;
+    position: absolute;
+    top: 33%;
+    left: 17%;
+    display: none;
+}
+
+.hNote{
+    position: absolute;
+    top: 46%;
+    left: 19%;
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
+.spImg{
+    position: absolute;
+    top: 32%;
+    left: 16%;
+    display: none;
+}
+
+.hImg{
+    animation: beat .7s infinite alternate;
+}
+
+@keyframes beat{
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+
+/* ============================================= */
+
+
+/* PHONE 1 */
+@media (max-width:270px){
+    body{
+        background-color: lightcyan;
+    }
+
+    main{
+        display: block;
+    }
+
+    section#sec1{
+        margin: 0;
+    }
+
+    #watch-face{
+        height: 200px;
+        margin: 30% 50%;
+    }
+
+    section#sec2{
+        margin: 0;
+    }
+
+    #sec2 > .heading , #sec2 > .desc{
+        box-sizing: border-box;
+    }
+
+
+
+    #sec2 > .heading , #sec2 > .desc , #sec2 > .colors , #sec2 > .all-c , #sec2 > .all-f{
+        width: 90vw;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+
+    #span{
+        font-size: 18px;
+        font-weight: 700;
+        position: absolute;
+        top: 23%;
+        left: 37%;
+        color: white;
+    }
+    
+    .hImg{
+        height: 50px;
+        position: absolute;
+        top: 20%;
+        left: 39%;
+        display: none;
+    }
+    
+    .hNote{
+        position: absolute;
+        top: 26%;
+        left: 45%;
+        color: white;
+        font-size: 18px;
+        display: none;
+    }
+
+    .spImg{
+        height: 70px;
+        position: absolute;
+        top: 20%;
+        left: 39%;
+        display: none;
+    }
+
+    .all-f{
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* PHONE 2 */
+@media (min-width:271px) and (max-width:425px){
+    body{
+        background-color: lightpurple;
+    }
+
+    main{
+        display: block;
+    }
+
+    section#sec1{
+        margin: 0;
+    }
+
+    #watch-face{
+        height: 220px;
+        margin: 40% 39%;
+    }
+
+
+    section#sec2{
+        margin: 0;
+    }
+
+    #sec2 > .heading , #sec2 > .desc{
+        box-sizing: border-box;
+    }
+
+    section#sec2{
+        text-align: start;
+    }
+
+    #sec2 > .heading , #sec2 > .desc , #sec2 > .colors , #sec2 > .all-c , #sec2 > .all-f{
+        width: 90vw;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #span{
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        top: 27%;
+        left: 36%;
+        color: white;
+    }
+    
+    .hImg{
+        height: 60px;
+        position: absolute;
+        top: 23%;
+        left: 37%;
+        display: none;
+    }
+    
+    .hNote{
+        position: absolute;
+        top: 31%;
+        left: 44%;
+        color: white;
+        font-size: 20px;
+        display: none;
+    }
+
+    .spImg{
+        height: 80px;
+        position: absolute;
+        top: 23%;
+        left: 38%;
+        display: none;
+    }
+
+    #burgundy , #burlywood, #orange , #purple{
+        border: none;
+        width: 60px;
+        height: 40px;
+    }
+
+    .all-f{
+        margin: 20px;
+        box-sizing: border-box;
+    }
+
+    .all-f>.fea{
+        font-size: 16px;
+        padding: 15px;
+    }
+
+}
+
+
+/* TABLET */
+/* @media (min-width:426px) and (max-width:768px){
+    body{
+        background-color: lightpurple;
+    }
+
+    main{
+        display: block;
+    }
+
+    #sec1>img{
+        margin: 10px;
+        height: 350px;
+    }
+
+    section#sec2{
+        margin: 0;
+    }
+
+    #sec2 > .heading , #sec2 > .desc{
+        box-sizing: border-box;
+    }
+
+    #sec2 > .heading , #sec2 > .desc , #sec2 > .colors , #sec2 > .all-c , #sec2 > .all-f{
+        width: 100vw;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #span{
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        top: 33%;
+        left: 35%;
+        color: white;
+    }
+    
+    .hImg{
+        height: 100px;
+        position: absolute;
+        top: 27%;
+        left: 34%;
+        display: none;
+    }
+    
+    .hNote{
+        position: absolute;
+        top: 39%;
+        left: 46%;
+        color: white;
+        font-size: 30px;
+        display: none;
+    }
+
+    .spImg{
+        height: 130px;
+        position: absolute;
+        top: 27%;
+        left: 36%;
+        display: none;
+    }
+
+} */
+
+
+/* LAPTOP */
+/* @media (min-width:769px) and (max-width:1024px){
+    body{
+        background-color: lightpurple;
+    }
+
+    main{
+        display: block;
+    }
+
+    #sec1>img{
+        margin: 10px;
+        height: 350px;
+    }
+
+    section#sec2{
+        margin: 0;
+    }
+
+    #sec2 > .heading , #sec2 > .desc{
+        box-sizing: border-box;
+    }
+
+    #sec2 > .heading , #sec2 > .desc , #sec2 > .colors , #sec2 > .all-c , #sec2 > .all-f{
+        width: 100vw;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #span{
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        top: 33%;
+        left: 35%;
+        color: white;
+    }
+    
+    .hImg{
+        height: 100px;
+        position: absolute;
+        top: 27%;
+        left: 34%;
+        display: none;
+    }
+    
+    .hNote{
+        position: absolute;
+        top: 39%;
+        left: 46%;
+        color: white;
+        font-size: 30px;
+        display: none;
+    }
+
+    .spImg{
+        height: 130px;
+        position: absolute;
+        top: 27%;
+        left: 36%;
+        display: none;
+    }
+
+} */
+
